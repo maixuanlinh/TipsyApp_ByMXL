@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		4869DC8125688AF3005DBE45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4869DC8025688AF3005DBE45 /* AppDelegate.swift */; };
 		4869DC8325688AF3005DBE45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4869DC8225688AF3005DBE45 /* SceneDelegate.swift */; };
-		4869DC8525688AF3005DBE45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4869DC8425688AF3005DBE45 /* ViewController.swift */; };
 		4869DC8825688AF3005DBE45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4869DC8625688AF3005DBE45 /* Main.storyboard */; };
 		4869DC8A25688AF6005DBE45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4869DC8925688AF6005DBE45 /* Assets.xcassets */; };
 		4869DC8D25688AF6005DBE45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4869DC8B25688AF6005DBE45 /* LaunchScreen.storyboard */; };
 		4869DC9825688AF6005DBE45 /* TipsyApp_ByMXLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4869DC9725688AF6005DBE45 /* TipsyApp_ByMXLTests.swift */; };
 		4869DCA325688AF6005DBE45 /* TipsyApp_ByMXLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4869DCA225688AF6005DBE45 /* TipsyApp_ByMXLUITests.swift */; };
+		4869DCB5256B1BD4005DBE45 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4869DCB4256B1BD4005DBE45 /* ResultsViewController.swift */; };
+		4869DCBD256B1CDE005DBE45 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4869DCBC256B1CDD005DBE45 /* CalculateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		4869DC7D25688AF3005DBE45 /* TipsyApp_ByMXL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipsyApp_ByMXL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4869DC8025688AF3005DBE45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4869DC8225688AF3005DBE45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4869DC8425688AF3005DBE45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4869DC8725688AF3005DBE45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4869DC8925688AF6005DBE45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4869DC8C25688AF6005DBE45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		4869DC9E25688AF6005DBE45 /* TipsyApp_ByMXLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsyApp_ByMXLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4869DCA225688AF6005DBE45 /* TipsyApp_ByMXLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyApp_ByMXLUITests.swift; sourceTree = "<group>"; };
 		4869DCA425688AF6005DBE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4869DCB4256B1BD4005DBE45 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		4869DCBC256B1CDD005DBE45 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,9 @@
 		4869DC7F25688AF3005DBE45 /* TipsyApp_ByMXL */ = {
 			isa = PBXGroup;
 			children = (
+				4869DCB3256B1B7F005DBE45 /* Controller */,
 				4869DC8025688AF3005DBE45 /* AppDelegate.swift */,
 				4869DC8225688AF3005DBE45 /* SceneDelegate.swift */,
-				4869DC8425688AF3005DBE45 /* ViewController.swift */,
 				4869DC8625688AF3005DBE45 /* Main.storyboard */,
 				4869DC8925688AF6005DBE45 /* Assets.xcassets */,
 				4869DC8B25688AF6005DBE45 /* LaunchScreen.storyboard */,
@@ -126,6 +128,15 @@
 				4869DCA425688AF6005DBE45 /* Info.plist */,
 			);
 			path = TipsyApp_ByMXLUITests;
+			sourceTree = "<group>";
+		};
+		4869DCB3256B1B7F005DBE45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4869DCB4256B1BD4005DBE45 /* ResultsViewController.swift */,
+				4869DCBC256B1CDD005DBE45 /* CalculateViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4869DC8525688AF3005DBE45 /* ViewController.swift in Sources */,
 				4869DC8125688AF3005DBE45 /* AppDelegate.swift in Sources */,
+				4869DCBD256B1CDE005DBE45 /* CalculateViewController.swift in Sources */,
 				4869DC8325688AF3005DBE45 /* SceneDelegate.swift in Sources */,
+				4869DCB5256B1BD4005DBE45 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
